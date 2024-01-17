@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("MWPMarkSeenDeferred",["CometDebounce","LSFactory","LSMarkFolderSeen","promiseDone"],(function(a,b,c,d,e,f,g){"use strict";function a(a,b){if(a!=null){c("promiseDone")(b.runInTransaction(function(b){return c("LSMarkFolderSeen")(a,c("LSFactory")(b))},"readwrite"));return}}b=c("CometDebounce")(a,{leading:!0,wait:500});g.markSeen=b}),98);
